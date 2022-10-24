@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Details</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+	</head>
+	<body>
+	<center>
+	<br>
+		<table class="result-table" style="margin: -150px;">
+			<tr>
+				<td colspan="2"><h3 style="font-size: 50px;margin: 10px;">Details</h3></td>
+			</tr>
+			<tr>
+				<h3><td style="font-family:Cambria; font-weight: bold;">User Name </td><td>{{ name }}</td></h3><br>
+			</tr>
+			<tr>
+				<h3><td style="font-family:Cambria; font-weight: bold;">E-mail  </td><td>{{ email }}</td></h3><br>
+			</tr>
+			<tr>
+				<h3><td style="font-family:Cambria; font-weight: bold;">Mobile Number </td><td>{{ mobile }}</td></h3><br>
+			</tr>
+		</table>
+		<br><br>
+	</center>
+	</body>
+</html>

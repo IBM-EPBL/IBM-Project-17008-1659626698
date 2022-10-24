@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Registration Page</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+	</head>
+	<body>
+		<center>
+		<br><br>
+		<h1>Registration Page</h1><br>
+		<form action="{{ url_for('details') }}" method="post" class="index-table">
+			<table>
+				<tr>
+					<td>
+						<label>User Name</label>
+					</td>
+					<td>
+					  <input type="text" class="name-input name mb-3" id="name" name="name" required>  
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>E-mail</label>
+					</td>
+					<td>
+						<input type="email" class="name-input name mb-3" id="email" name="email" required>  
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Mobile Number</label>
+					</td>
+					<td>
+						<input type="number" class="name-input name mb-3" id="mobile" name="mobile" required>  
+					</td>
+				</tr>
+			</table>
+			<br><br>
+			<input class="btn btn-outline-primary" type="submit" value="Submit">
+		</form>
+		</center>
+	</body>
+</html>
