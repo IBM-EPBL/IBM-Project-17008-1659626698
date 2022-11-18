@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Booking1</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Premium Account </h1>
+		<p>The doctor of the future will no longer treat the human frame with drugs, but rather will cure and prevent disease with nutrition.</p>
+		<span>
+			<p>Register to go premium!</</p>
+		</span>
+		</div>
+	</div>
+	
+	
+	<div class="right">
+		<h5>Book</h5>
+		<p>Your just one step away ! It takes less than a minute</p>
+			
+		<div class="remember-me--forget-password">
+				<!-- Angular -->
+			<p>Select payment method</p>
+		</div>
+			
+			
+			<a href="{{url_for('credit')}}"><input type="submit" class="button" value = "Credit card"/></a>
+			<a href="{{url_for('debit')}}"><input type="submit" class="button" value = "Debit card"/></a>
+			
+	</div>
+	
+</div>
+<!-- partial -->
+  
+</body>
+</html>

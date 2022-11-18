@@ -1,0 +1,149 @@
+<html>
+<head>
+<link href="{{ url_for('static',filename='styles/styles.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body style="background-image: url('static/background.webp');background-size: cover;">
+	<div class = "slides">
+	
+	<div class="gallery">
+		<a href="{{url_for('doc1')}}">
+			<img src="{{url_for('static', filename='doc1.jpg')}}" align="middle" id="doctor" alt="doctor" width="600" height="400"/>
+			<div class="desc">
+				<h3>Dr.Neha Dupia</h3>
+				<h4>Ratings :<h4>
+				<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				</div>
+				<p>Specialised in Anxiety, Stress, Depression</p>
+			</div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="{{url_for('doc2')}}">
+			<img src="{{url_for('static', filename='doc2.webp')}}" id="doctor" alt="doctor" width="600" height="400">
+			<div class="desc">
+				<h3>Dr.Mary Lush</h3>
+				<h4>Ratings :<h4>
+				<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				</div>
+				<p>Specialised in Anxiety, Stress, Depression</p>
+			</div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="{{url_for('doc3')}}">
+			<img src="{{url_for('static', filename='doc3.avif')}}" id="doctor" alt="doctor" width="600" height="400">
+			<div class="desc">
+				<h3>Dr.Richa Savan</h3>
+				<h4>Ratings :<h4>
+				<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				</div>
+				<p>Specialised in Anxiety, Stress, Depression</p>
+			</div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="{{url_for('doc4')}}">
+			<img src="{{url_for('static', filename='doc4.webp')}}" id="doctor" alt="doctor" width="600" height="400">
+			<div class="desc">
+				<h3>Dr.Mia Jose</h3>
+				<h4>Ratings :<h4>
+				<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				</div>
+				<p>Specialised in Anxiety, Stress, Depression</p>
+			</div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="{{url_for('doc5')}}">
+			<img src="{{url_for('static', filename='doc5.jpg')}}" id="doctor" alt="doctor" width="600" height="400">
+			<div class="desc">
+				<h3>Dr.Felix Henry</h3>
+				<h4>Ratings :<h4>
+				<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				</div>
+				<p>Specialised in Anxiety, Stress, Depression</p>
+			</div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="{{url_for('doc6')}}">
+			<img src="{{url_for('static', filename='doc6.jpg')}}" id="doctor" alt="doctor" width="600" height="400">
+			<div class="desc">
+				<h3>Dr.Bhaskar</h3>
+				<h4>Ratings :<h4>
+				<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				</div>
+				<p>Specialised in Anxiety, Stress, Depression</p>
+			</div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="{{url_for('doc7')}}">
+			<img src="{{url_for('static', filename='doc7.jpeg')}}" id="doctor" alt="doctor" width="600" height="400">
+			<div class="desc">
+				<h3>Dr.Mac</h3>
+				<h4>Ratings :<h4>
+				<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				</div>
+				<p>Specialised in Anxiety, Stress, Depression</p>
+			</div>
+		</a>
+	</div>
+	<div class="gallery">
+		<a href="{{url_for('doc8')}}">
+			<img src="{{url_for('static', filename='doc8.avif')}}" id="doctor" alt="doctor" width="600" height="400">
+			<div class="desc">
+				<h3>Dr.Nia</h3>
+				<h4>Ratings :<h4>
+				<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+					<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				</div>
+				<p>Specialised in Anxiety, Stress, Depression</p>
+			</div>
+		</a>
+	</div>
+	
+	</div>
+	
+	
+</body>
+</html>
