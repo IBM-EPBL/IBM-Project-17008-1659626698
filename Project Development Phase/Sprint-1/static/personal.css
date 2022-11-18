@@ -1,0 +1,96 @@
+fieldset {
+	width: 400px;
+	margin: 70px 0 0 50px;
+	border: 3px solid grey;
+	box-shadow: 0px 3px 3px 5px  grey;
+	padding: 17px;
+    background-color:rgb(252, 249, 249);
+}
+
+
+
+label {
+	float: left;
+	width: 140px;
+	display: block;
+	clear: left;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+    font-size: 18;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+	margin-left: 150px;
+    border: 2px solid black;
+    box-shadow: 2px 2px grey;
+}
+
+#btn1
+{
+	padding: 10px 20px;
+	margin-left: 210px;
+	margin-top:20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px grey;
+}
+
+
+
+input {
+	margin-top: 10px;
+	display: block;
+	text-align: left;
+    border: 1.5px solid black;
+    box-shadow: 2px 2px grey;
+	width: 150px;
+	height: 25px;
+}
+
+#bmi_label {
+	width: 200px;
+}
+
+#bmi {
+	width: 90px;
+	height: 25px;
+}
+
+legend {
+    font-size: 25;
+    color:black;
+    text-shadow: 2px 2px 8px rgb(84, 84, 84);
+    font-weight: bold;
+   
+}
+.hidden {
+
+	display: none;
+  
+}
+table
+{
+	margin-top: -500px;
+	margin-left:650px;
+	border: 3px solid grey;
+	box-shadow: 0px 3px 3px 5px  grey;
+	padding: 17px;
+	width: 480px;
+    background-color:rgb(252, 249, 249);
+}
+
+td{
+	padding:15px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	
+  }
+
+th{
+	font-size: 25;
+    font-weight: bold;
+}
