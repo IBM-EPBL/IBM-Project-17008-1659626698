@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrtion Assistant Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/stylesheet.css"/>
+    <style>
+    
+    #navbar button{
+              
+              border: 3px solid grey;
+              background-image:linear-gradient(to right,rgb(250, 234, 154) ,lightgreen);
+              border-radius: 10px;
+              width: 250px;
+              padding: 5px;
+              margin-left: 15px;
+              margin-top: 20px;
+              margin-right: 15px;
+              cursor:pointer;
+              height: 50px;
+              font-weight: bold;
+              font-size: 20px;
+              box-shadow: 2px 2px grey;
+            }  
+    button:hover   
+    {
+      color: #fff;
+
+    }  
+
+        table
+        {
+            margin-top: 70px;
+            margin-left:400px;
+            border: 3px solid grey;
+            box-shadow: 0px 3px 3px 5px  grey;
+            padding: 17px;
+            width: 700px;
+            background-color:rgb(252, 249, 249);
+        }
+
+        td{
+            padding:20px;
+            
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            
+        }
+
+        th{
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+        <br>
+        <nav>
+            <a href="daily_update"><button  style="margin-left: 80px;"><span>Daily Update</span></button></a>
+            <a href="uploadimage"><button><span>Upload Image</span></button></a>
+            <a href="premium"><button><span>Premium</span></button></a>
+            <a href="user_diet_info"><button ><span>Personal Information</span></button></a>
+            <a href="logout"><button ><span>Log Out</span></button></a>
+          
+        </nav>
+    </div>
+    <div class="main">
+        <div id="continer">
+            <div id="form-search">
+                <FORM NAME="myform" ACTION="" METHOD="GET">
+                    <div id="cointiner-inline">
+                        <INPUT TYPE="text" placeholder="Enter Product" id="product-name" NAME="product-name" VALUE="">
+                        <INPUT TYPE="button" class="button" NAME="button1" Value="Search" onClick="getNutrients()">
+                        <br>
+                    </div>
+                    <div id="cointiner-inline">
+                    <input type="file" accept="image/*" id="imageInput" >
+	               </div>
+            </div>
+                    
+            </form>  
+            
+            </div>
+           
+            <div class="box2">
+                <div class="bcol">
+                    <table>
+                        <tr>
+                            <th colspan="2" style="background-color:#ffffff ;margin-top: 25px;font-weight: bold;padding-left: 15px; font-size: 25px;" id="food-name"></th>
+                        </tr>
+                        <tr>
+                            <th>Calories</th>
+                            <th id="calories"></th>
+                          </tr>
+                        <tr>
+                            <th>Total Fat</th>
+                            <th id="totalfat"></th>
+                        </tr>
+                        <tr>
+                            <th>Cholesterol</th>
+                            <th id="cholesterol"></th>
+                        </tr>
+                        <tr>
+                            <th>Carbohydrates</th>
+                            <th id="carbohydrates"></th>
+                        </tr>
+                        <tr>
+                            <th>Protein</th>
+                            <th id="protein"></th>
+                        </tr>
+                        <tr>
+                            <th>Sodium</th>
+                            <th id="sodium"></th>
+                        </tr>
+                        <tr>
+                            <th>Potassium</th>
+                            <th id="potassium"></th>
+                        </tr>
+                        <tr>
+                            <th>Sugar</th>
+                            <th id="sugar"></th>
+                          </tr>
+
+                      </table>
+                </div>
+            </div>
+    </div>        
+
+    <script>
+        function getNutrients(){
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': 'b02993d8cemsh37f959e6fdec70cp17ed23jsn3fc3dd193ef8',
+                    'X-RapidAPI-Host': 'calorieninjas.p.rapidapi.com'
+                }
+            };
+            let data = document.getElementById("product-name").value
+            fetch('https://calorieninjas.p.rapidapi.com/v1/nutrition?query=' + data, options)
+                .then(response => response.json())
+                .then(response => {result = response;
+                    document.getElementById("food-name").innerText = result.items[0].serving_size_g + "g of " + result.items[0].name + " contains"
+                    document.getElementById("totalfat").innerText = result.items[0].fat_total_g.toFixed(2) + " " + 'g';
+                    document.getElementById("calories").innerText = result.items[0].calories.toFixed(2);
+                    document.getElementById("cholesterol").innerText = result.items[0].cholesterol_mg.toFixed(2) + " " + 'mg';
+                    // document.getElementById("calcium").innerText = result.totalNutrients.CA.quantity.toFixed(2) + " " + result.totalNutrients.CA.unit;
+                    document.getElementById("sodium").innerText = result.items[0].sodium_mg.toFixed(2) + " " + 'mg';
+                    document.getElementById("potassium").innerText = result.items[0].potassium_mg.toFixed(2) + " " + 'mg';
+                    document.getElementById("sugar").innerText = result.items[0].sugar_g.toFixed(2) + " " + 'g';
+                    document.getElementById("protein").innerText = result.items[0].protein_g.toFixed(2) + " " + 'g';
+                    document.getElementById("carbohydrates").innerText = result.items[0].carbohydrates_total_g.toFixed(2) + " " + 'g';
+                    // document.getElementById("vitaminA").innerText = result.totalNutrients.VITA_RAE.quantity.toFixed(2) + " " + result.totalNutrients.VITA_RAE.unit;
+                    // document.getElementById("vitaminC").innerText = result.totalNutrients.VITC.quantity.toFixed(2) + " " + result.totalNutrients.VITC.unit;
+                    document.getElementsByClassName("box2")[0].style.display = 'block';
+                    console.log(result);
+                })
+                .catch(err => console.error(err));
+    
+	    
+        
+        }
+        
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<link href="{{ url_for('static',filename='styles/styles.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-image: url('static/background.jpg');background-size: cover;max-width: 100%;overflow-x: hidden;overflow-y: hidden;">
+    <div class="gallery">
+		<img src="{{url_for('static', filename='doc3.avif')}}" id="doctor" alt="doctor" width="200" height="200">
+		<div class="desc">
+			<h3>Dr.Richa Savan</h3>
+			<h4>Ratings :<h4>
+			<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+			</div>
+			<p>Specialised in Anxiety, Stress, Depression</p>
+		</div>
+	</div>
+	
+	<div class="relative1" width="200px">
+		<h2>Qualification</h2>
+		<p>B.A in Nutrition,M.Sc in Food and nutrition</p>
+	</div>
+	<div class="relative2" width="200px">
+		<h2>Specialization</h2>
+		<p>Diabetes,Obesity,High cholestrol,Anxiety, Stress, Depression, Relationship Issues, Grief, Trauma, Couple Counseling, Suicidal Ideation, Sleep Issues, Narcissistic Abuse, Self-Harm, Body Image, LGBTQI, Phobia, Psycho-Somatic Disorders, Self Confidence, Eating Disorders, Marital Discord</p>
+	</div>
+	<div class="relative3" width="200px">
+		<h2>Next Available At</h2>
+		<p>Nov 16, 2022 1:00 PM</p>
+	</div>
+	<div class="relative4" width="200px">
+		<h2>Languages spoken</h2>
+		<p>English, Hindi, Bengali</p>
+	</div>
+	<div class="relative5" width="200px">
+		<h2>Theraupatic experience</h2>
+		<p>Cognitive Behavioural Therapy (CBT), Dialectical Behavioural Therapy (DBT), Client Centred, Rational Emotive Behavioural Therapy (REBT), Trauma Informed Therapy, Mindfulness Based Therapies, Art Therapy, Neuro-Linguistic Programming (NLP)</p>
+		<p></p>
+	</div>
+	
+	<a href="{{url_for('booking')}}"><button class="button button1">Book a session</button></a>
+
+</body>
+</html>

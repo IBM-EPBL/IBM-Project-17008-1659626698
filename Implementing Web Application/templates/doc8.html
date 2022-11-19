@@ -1,0 +1,71 @@
+<html>
+<head>
+<link href="{{ url_for('static',filename='styles/styles.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-image: url('static/background.jpg');background-size: cover;overflow-x: hidden;max-width: 100%;overflow-y: hidden;">
+    <div class="gallery">
+		<img src="{{url_for('static', filename='doc8.avif')}}" id="doctor" alt="doctor" width="200" height="200">
+		<div class="desc">
+			<h3>Dr.Nia</h3>
+			<h4>Ratings :<h4>
+			<div class="Rating" aria-label="Rating of this item is 3 out of 5">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+				<img src="{{url_for('static', filename='star.jpg')}}" width="20" height="20" class="Rating--Star">
+			</div>
+			<p>Specialised in Anxiety, Stress, Depression</p>
+		</div>
+	</div>
+	
+	<div class="relative1" width="200px">
+		<h2>Qualification</h2>
+		<p>B.A in Nutrition,M.Sc in Food and nutrition</p>
+	</div>
+	<div class="relative2" width="200px">
+		<h2>Specialization</h2>
+		<p>Diabetes,Obesity,High cholestrol,Anxiety, Stress, Depression, Relationship Issues, Grief, Trauma, Couple Counseling, Suicidal Ideation, Sleep Issues, Narcissistic Abuse, Self-Harm, Body Image, LGBTQI, Phobia, Psycho-Somatic Disorders, Self Confidence, Eating Disorders, Marital Discord</p>
+	</div>
+	<div class="relative3" width="200px">
+		<h2>Next Available At</h2>
+		<p>Nov 16, 2022 1:00 PM</p>
+	</div>
+	<div class="relative4" width="200px">
+		<h2>Languages spoken</h2>
+		<p>English, Hindi, Bengali</p>
+	</div>
+	<div class="relative5" width="200px">
+		<h2>Theraupatic experience</h2>
+		<p>Cognitive Behavioural Therapy (CBT), Dialectical Behavioural Therapy (DBT), Client Centred, Rational Emotive Behavioural Therapy (REBT), Trauma Informed Therapy, Mindfulness Based Therapies, Art Therapy, Neuro-Linguistic Programming (NLP)</p>
+		<p></p>
+	</div>
+	
+	<a href="{{url_for('booking')}}"><button class="button button1">Book a session</button></a>
+	
+	<div>
+	Reviews:
+	About
+Puja, a gold medallist in psychology, has been practicing professionally for 5 years now. She believes in being compassionate, understanding, & maintaining a friendly demeanour with her clients in any situation. She seeks to change the mental health awareness level in India for the better.
+
+Reviews
+Priya
+Apr 18, 2022
+Words cannot express the magnitude of help that Ms Pooja has provided. You understood what i have been trying tell from years to my family, friends and anyone who would listen. I was told to sleep it off or snap out of it or get a hobby, get life and so on. I feel safe talking to you, don't feel ashamed or scared of being judged or for being honest about how I feel. I only wish I had someone who would understand or just listen without labelling me. Thanks to Anshika for that call, not sure what's going to happen in future but i am eternally grateful to both of you for all the care and support. Thank you for making me understand it's not my fault and it's alright to feel the way I do.
+
+Aashmika
+Apr 27, 2022
+I had been to two counsellors before coming here, and since I hadn't had a pleasant experience with them, I wasn't sure how things would go at Felicity. I am so glad I took the risk and went ahead with this because I finally felt better and assured that things would be okay. Ms Puja is indeed an expert at what she does, and I really liked the way she gave me an insight into my problems by giving me accurate analogies and precise terminologies for what I'm going through.
+
+Akanksha
+Apr 30, 2022
+Dr. Pooja Roy is a very good listener and she aptly diagnosed the symptoms. She guided on exercises to help in relaxing the mind. I am very satisfied with the session with her and look forward for further consultation.
+
+Muskan
+Nov 7, 2021
+Puja's demeanour is so comforting, she instantly puts you at ease and makes you feel safe. The coping mechanisms that she taught me have made a remarkable difference in my life
+
+Load More Reviews
+	</div>
+</body>
+</html>
